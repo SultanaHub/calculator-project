@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+
+    </header>
+
+    <main>
+      
+     <div class="row">
+
+        <div class="col-lg-4"></div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <h1 class="text-center">Calculator</h1>
+
+            <div class="card text-center mt-5">
+                <div class="card-header">
+                    <input type="text" id="result" maxlength="10" readonly="readonly"> <!--readonly="readonly" -->
+    
+                </div>
+                <div class="card-body">
+
+                    <div>
+                        <input type="button" class="btn" value="C" onclick="clearResult()">
+                        <input type="button" class="btn" value="+/-" onclick="reverseNumber()">
+                        <input type="button" class="btn" value="%" onclick="insertNumber('%')">
+                        <input type="button" class="btn btn-side" value="/" onclick="insertNumber('/')">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn" value="7" onclick="insertNumber(7)">
+                        <input type="button" class="btn" value="8" onclick="insertNumber(8)">
+                        <input type="button" class="btn" value="9" onclick="insertNumber(9)">
+                        <input type="button" class="btn btn-side" value="X" onclick="insertNumber('*')">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn" value="4" onclick="insertNumber(4)">
+                        <input type="button" class="btn" value="5" onclick="insertNumber(5)">
+                        <input type="button" class="btn" value="6" onclick="insertNumber(6)">
+                        <input type="button" class="btn btn-side" value="-" onclick="insertNumber('-')">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn" value="1" onclick="insertNumber(1)">
+                        <input type="button" class="btn" value="2" onclick="insertNumber(2)">
+                        <input type="button" class="btn" value="3" onclick="insertNumber(3)">
+                        <input type="button" class="btn btn-side"  value="+" onclick="insertNumber('+')">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn" value="0" onclick="insertNumber(0)">
+                        <input type="button" class="btn" value="." onclick="insertNumber('.')">
+                        <input type="button" class="btn" value="del" onclick="deleteNumber()">
+                        <input type="button" class="btn" style="background-color: orangered;" value="=" onclick="calculate()">
+                    </div>
+    
+                </div>
+                <div class="card-footer"></div>
+            </div> <!-- end of card-->
+        </div>
+
+        <div class="col-lg-4"></div>
+
+     </div> <!--end of row-->
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <!-- js,jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
